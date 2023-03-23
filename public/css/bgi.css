@@ -1,0 +1,10 @@
+body{
+    background: url(/img/bgi.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+}
+
+.navbar, .footer{
+    background-color: rgba(0, 0, 0, 0.336) !important;
+}

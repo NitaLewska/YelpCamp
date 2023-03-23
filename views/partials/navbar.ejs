@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">YelpCamp</a>
+        <a class="navbar-brand" href="/">YelpCamp</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,6 +16,8 @@
                 <a class="nav-link" href="/login">Login</a>
                 <a class="nav-link" href="/register">Register</a>
                 <% } else { %>
+
+                <a class="nav-link disabled ">You are logged in as <span class="fw-bolder"><%=currentUser.username %></span></a>
                 <a class="nav-link" href="/logout">Logout</a>
                 <% } %>
             </div>

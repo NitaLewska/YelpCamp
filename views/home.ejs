@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YelpCamp</title>
-</head>
-<body>
-    <h1>YelpCamp</h1>
-</body>
-</html>
+<% layout('layouts/boilerplate') %>
+
+<link rel="stylesheet" href="/css/bgi.css">
+<h1 class="text-center text-light">Welcome to Yelp Camp</h1>
+<p></p>
+<a class="nav-link btn btn-info text-white mb-4" href="/campgrounds">Browse Campgrounds</a>
+<div id="map" style="width: 100%; height: 50vh"></div>
+
+<script>
+    const mapToken = '<%- process.env.MAPBOX_TOKEN %>'
+    const campgrounds = {features: <%- JSON.stringify(campgrounds) %>}
+</script>
+<script src="/js/clusterMap.js" crossorigin=""></script>

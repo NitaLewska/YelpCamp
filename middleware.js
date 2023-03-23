@@ -21,7 +21,6 @@ module.exports.validateCampground = (req, res, next) => {
     } else {
         next();
     }
-    console.log(res)
 }
 
 module.exports.isAuthor = async (req, res, next) => {
@@ -52,5 +51,4 @@ module.exports.validateReview = (req, res, next) => {
     } else {
         next();
     }
-    console.log(res)
 }
